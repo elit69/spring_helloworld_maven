@@ -28,13 +28,12 @@ public class ApiController {
 		
 		ArrayList<SmsLog> currencyConversionRules = null;
 		try {
-			String sqlGetWallet = "FROM SmsLog";
 			 currencyConversionRules = (ArrayList<SmsLog>) session
-					.createQuery(sqlGetWallet)
+					.createCriteria(SmsLog.class)
 					.setMaxResults(10)
 					.setCacheable(true)
 					//.setCacheMode(CacheMode.NORMAL)
-					.setCacheRegion("query.frontpages")
+					//.setCacheRegion("query.frontpages")
 					.list();	
 		} catch (Exception e) {
 			e.printStackTrace();

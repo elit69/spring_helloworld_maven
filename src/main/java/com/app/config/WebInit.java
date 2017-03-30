@@ -1,4 +1,4 @@
-package com.mcq.app.config;
+package com.app.config;
 
 
 import javax.servlet.ServletContext;
@@ -13,11 +13,9 @@ public class WebInit implements WebApplicationInitializer {
 	
 	@Override
 	public void onStartup(ServletContext container) throws ServletException {
-		AnnotationConfigWebApplicationContext servletContext = 
-				new AnnotationConfigWebApplicationContext();
+		AnnotationConfigWebApplicationContext servletContext = new AnnotationConfigWebApplicationContext();
 		servletContext.register(WebConfig.class);
-		ServletRegistration.Dynamic dispatcherServlet = 
-				container.addServlet("springDispatcher", new DispatcherServlet(servletContext));
+		ServletRegistration.Dynamic dispatcherServlet = container.addServlet("springDispatcher", new DispatcherServlet(servletContext));
 		dispatcherServlet.addMapping("/");
 		dispatcherServlet.setLoadOnStartup(1);
 	}

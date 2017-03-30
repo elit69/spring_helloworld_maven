@@ -1,4 +1,4 @@
-package com.mcq.app.controller;
+package com.app.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

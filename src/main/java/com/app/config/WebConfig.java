@@ -1,4 +1,4 @@
-package com.mcq.app.config;
+package com.app.config;
 
 
 import org.springframework.context.annotation.Bean;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc 
-@ComponentScan(basePackages = "com.mcq.app")
+@ComponentScan(basePackages = "com.app")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
 	@Override

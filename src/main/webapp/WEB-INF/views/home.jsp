@@ -5,6 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link rel='stylesheet' href='webjars/bootstrap/css/bootstrap.min.css'>
+<link rel='stylesheet' href='webjars/bootstrap/3.3.6/css/bootstrap.min.css'>
 </head>
 <body>
 	<h1>${message}</h1>

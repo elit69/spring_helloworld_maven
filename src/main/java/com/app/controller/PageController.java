@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class PageController {
-		@RequestMapping(value="/", method = RequestMethod.GET)
-		public String home(ModelMap m) {
-			m.addAttribute("message", "Hello World!");
-			return "home";
-		}
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String home(ModelMap m) {
+		m.addAttribute("message", "Hello World!");
+		return "home";
+	}
 }

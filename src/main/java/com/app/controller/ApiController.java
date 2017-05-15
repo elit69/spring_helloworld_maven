@@ -43,4 +43,6 @@ public class ApiController {
 
 		return new ResponseEntity<ArrayList<SmsLog>>(currencyConversionRules, HttpStatus.OK);
 	}
+	
+	
 }

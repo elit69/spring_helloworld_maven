@@ -1,17 +1,11 @@
 Spring Helloworld with Maven
 
-
-
-JAVA 7 
-
-Dynamic Web Module 3.1 (web.xml)
-
-TOMCAT 8 
-
 SPRING 4
-
-POSTGRES 9.3 
+-	upload file
+-	webjar no version dependency
 
 Hibernate 5
+-	Cache
 
-Swagger 2
+POSTGRES 9.3 
+	
